@@ -3,12 +3,19 @@
 # ICPhubTurkey Web3 Real Estate Project
 ## This repository contains the backend code for an ICP Web3 project focused on managing real estate properties. The backend is implemented using Motoko, a programming language for the Internet Computer Protocol (ICP) platform.
 
+**Important Note:**
+
+While the backend side of the project is fully functional and operational, please note that the frontend connections and styling are currently incomplete. 
+Due to unforeseen circumstances, I was unable to complete these aspects of the project by the deadline. As a result, certain frontend functionalities 
+may not be fully integrated, and the visual styling may be lacking.
+Thank you for your support.
 ### Overview
 
 The backend provides functionalities to manage real estate properties including adding, updating, deleting, and retrieving property information. It utilizes a HashMap data structure to store and manage the properties.
 
 ### Motoko Code Structure
-The Motoko code consists of an actor type representing RealEstate and various functions to perform CRUD operations on real estate properties.
+The Motoko code consists of an actor type representing RealEstate and 
+various functions to perform CRUD operations on real estate properties.
 
 #### RealEstate Type
 ```motoko
