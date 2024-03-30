@@ -1,5 +1,4 @@
 
-Certainly! Below is a well-written README for your Motoko backend code:
 
 ICP Web3 Real Estate Project
 This repository contains the backend code for an ICP Web3 project focused on managing real estate properties. The backend is implemented using Motoko, a programming language for the Internet Computer Protocol (ICP) platform.
@@ -24,7 +23,7 @@ The RealEstate type defines the structure of a real estate property with fields 
 Functions
 add_estate
 motoko
-Copy code
+
 public func add_estate(id: Text, name: Text, img: Text, price: Text) : async Bool {
   // Creates a RealEstate object
   let realEstate : RealEstate = {
@@ -42,7 +41,7 @@ This function adds a new real estate property to the HashMap.
 
 update_estate
 motoko
-Copy code
+
 public func update_estate(id: Text, name: Text, img: Text, price: Text) : async Bool {
   // Creates a RealEstate object
   let realEstate : RealEstate = {
@@ -60,7 +59,7 @@ This function updates an existing real estate property in the HashMap.
 
 delete_estate
 motoko
-Copy code
+
 public func delete_estate(id: Text) : async Bool {
   // Deletes the real estate from the HashMap
   RealEstateMap.delete(id);
@@ -70,7 +69,7 @@ This function deletes a real estate property from the HashMap.
 
 get_estate
 motoko
-Copy code
+
 public query func get_estate(id: Text) : async ?RealEstate {
   // Retrieves a real estate property from the HashMap
   let realEstate : ?RealEstate = RealEstateMap.get(id);
