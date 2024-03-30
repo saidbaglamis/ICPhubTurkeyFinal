@@ -7,12 +7,11 @@
 
 The backend provides functionalities to manage real estate properties including adding, updating, deleting, and retrieving property information. It utilizes a HashMap data structure to store and manage the properties.
 
-Motoko Code Structure
+### Motoko Code Structure
 The Motoko code consists of an actor type representing RealEstate and various functions to perform CRUD operations on real estate properties.
 
-RealEstate Type
-motoko
-Copy code
+#### RealEstate Type
+```motoko
 type RealEstate= {
   id: Text;
   name: Text;
@@ -20,11 +19,10 @@ type RealEstate= {
   price: Text;
 };
 The RealEstate type defines the structure of a real estate property with fields for ID, name, image URL, and price.
-
-Functions
-add_estate
-motoko
-
+```
+### Functions
+#### add_estate
+```motoko
 public func add_estate(id: Text, name: Text, img: Text, price: Text) : async Bool {
   // Creates a RealEstate object
   let realEstate : RealEstate = {
@@ -39,10 +37,9 @@ public func add_estate(id: Text, name: Text, img: Text, price: Text) : async Boo
   return true;
 };
 This function adds a new real estate property to the HashMap.
-
-update_estate
-motoko
-
+```
+#### update_estate
+```motoko
 public func update_estate(id: Text, name: Text, img: Text, price: Text) : async Bool {
   // Creates a RealEstate object
   let realEstate : RealEstate = {
@@ -57,27 +54,25 @@ public func update_estate(id: Text, name: Text, img: Text, price: Text) : async 
   return true;
 };
 This function updates an existing real estate property in the HashMap.
-
-delete_estate
-motoko
-
+```
+#### delete_estate
+```motoko
 public func delete_estate(id: Text) : async Bool {
   // Deletes the real estate from the HashMap
   RealEstateMap.delete(id);
   return true;
 };
 This function deletes a real estate property from the HashMap.
-
-get_estate
-motoko
-
+```
+#### get_estate
+```motoko
 public query func get_estate(id: Text) : async ?RealEstate {
   // Retrieves a real estate property from the HashMap
   let realEstate : ?RealEstate = RealEstateMap.get(id);
   return realEstate;
 };
 This function retrieves a real estate property based on its ID from the HashMap.
-
+```
 Usage
 To use the backend functionalities, integrate the provided functions into your application logic. Ensure to handle asynchronous calls appropriately as the functions return promises.
 
