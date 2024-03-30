@@ -80,8 +80,8 @@ public query func get_estate(id: Text) : async ?RealEstate {
 };
 This function retrieves a real estate property based on its ID from the HashMap.
 ```
-Usage
+#### Usage
 To use the backend functionalities, integrate the provided functions into your application logic. Ensure to handle asynchronous calls appropriately as the functions return promises.
 
-Contributions
+#### Contributions
 Contributions to this project are welcome. Feel free to submit issues or pull requests for any enhancements or fixes.
