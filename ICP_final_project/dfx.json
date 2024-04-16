@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "ICP_final_project_backend": {
+      "declarations": {
+        "node_compatibility": true
+      },
+      "main": "src/ICP_final_project_backend/main.mo",
+      "type": "motoko"
+    },
+    "ICP_final_project_frontend": {
+      "dependencies": [
+        "ICP_final_project_backend"
+      ],
+      "source": [
+        "src/ICP_final_project_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "ICP_final_project_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
